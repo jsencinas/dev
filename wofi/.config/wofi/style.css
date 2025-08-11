@@ -1,0 +1,102 @@
+@define-color white        #f5f5f5;
+@define-color white-rgb    rgb(245, 245, 245);
+
+@define-color black        #0d0d0d;
+@define-color black-rgb    rgb(13, 13, 13);
+
+@define-color charcoal     #1a1a1a;
+@define-color charcoal-rgb rgb(26, 26, 26);
+
+@define-color graphite     #2a2a2a;
+@define-color graphite-rgb rgb(42, 42, 42);
+
+@define-color warm-silver  #9c9c9c;
+@define-color warm-silver-rgb rgb(156, 156, 156);
+
+@define-color deep-red     #a64f4f;
+@define-color deep-red-rgb rgb(166, 79, 79);
+
+@define-color text         #e0e0e0;
+@define-color text-rgb     rgb(224, 224, 224);
+
+@define-color subtext      #a8a8a8;
+@define-color subtext-rgb  rgb(168, 168, 168);
+
+* {
+  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-size: 18px;
+}
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 2px solid @warm-silver;
+  border-radius: 8px;
+  background-color: @charcoal;
+}
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  background-color: @charcoal;
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  background-color: @charcoal;
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  background-color: @charcoal;
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border-radius: 0.1em;
+  color: @text;
+  background-color: @graphite;
+}
+
+#input image {
+  color: @warm-silver;
+}
+
+#input * {
+  outline: 4px solid @warm-silver!important;
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  color: @text;
+}
+
+#entry {
+  background-color: @charcoal;
+}
+
+#entry arrow {
+  color: @warm-silver;
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 0.11em solid @warm-silver;
+}
+
+#entry:selected #text {
+  color: @white;
+}
+
+#entry:drop(active) {
+  background-color: @warm-silver!important;
+}
