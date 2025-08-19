@@ -33,9 +33,12 @@ zsh:
 
 # Change CapsLock to Ctrl
 
+# External installations
+sddm (Sugar-Candy):
+https://www.youtube.com/watch?v=2p7FINJSlAk&t=941s
 
 ## To do list:
 - Install a good netowrk manager with a gui
 - Add networking widgets in the waybar
 - RESOLVE GENERAL WIFI PROBLEMS
-- Solve the sddm theme bug and text size
+- 
