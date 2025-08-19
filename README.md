@@ -33,3 +33,9 @@ zsh:
 
 # Change CapsLock to Ctrl
 
+
+## To do list:
+- Install a good netowrk manager with a gui
+- Add networking widgets in the waybar
+- RESOLVE GENERAL WIFI PROBLEMS
+- Solve the sddm theme bug and text size
