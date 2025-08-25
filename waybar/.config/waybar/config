@@ -15,6 +15,7 @@
     "custom/pomodoro",
     "bluetooth",
     "network",
+    "tray",
     "pulseaudio", 
     "backlight",
     "battery",
@@ -65,8 +66,8 @@
     "format-disconnected": "󰤠 ",
     "interval": 5,
     "tooltip-format": "{essid} ({signalStrength}%)",
+    
     "on-click": "nm-connection-editor"
-
  },
 
   "cpu": {
