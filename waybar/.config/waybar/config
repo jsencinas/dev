@@ -12,7 +12,6 @@
   "modules-center": ["clock"],
 
   "modules-right": [
-    "tray",
     "custom/pomodoro",
     "bluetooth",
     "network",
@@ -54,7 +53,7 @@
   },
 
   "clock": {
-    "timezone": "America/Mexico_City",
+    "timezone": "Asia/Kolkata",
     "tooltip": false,
     "format": "{:%H:%M:%S  -  %A, %d}",
     "interval": 1
@@ -67,7 +66,8 @@
     "interval": 5,
     "tooltip-format": "{essid} ({signalStrength}%)",
     "on-click": "nm-connection-editor"
-  },
+
+ },
 
   "cpu": {
     "interval": 1,
@@ -137,4 +137,3 @@
   },
 
 }
-
