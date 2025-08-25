@@ -22,6 +22,7 @@ nvim:
 - 
 
 waybar:
+https://github.com/Prateek7071/dotfiles
 - 
 
 wofi:
