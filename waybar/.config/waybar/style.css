@@ -128,6 +128,7 @@
 #pulseaudio,
 #backlight,
 #network,
+#tray,
 #custom-lock,
 #battery {
   background-color: #1a1b26;
@@ -144,6 +145,7 @@
 #pulseaudio:hover,
 #backlight:hover,
 #network:hover,
+#tray:hover,
 #custom-lock:hover,
 #battery:hover {
   background-color: rgb(41, 42, 53);
@@ -186,6 +188,10 @@
 
 #network.disconnected {
   color: #e78284;
+}
+
+#tray {
+  color: #c6d0f5;
 }
 
 #custom-lock {

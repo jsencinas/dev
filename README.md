@@ -23,6 +23,7 @@ nvim:
 
 waybar:
 https://github.com/Prateek7071/dotfiles
+https://github.com/Alexays/Waybar/wiki/Examples
 - 
 
 wofi:
