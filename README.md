@@ -33,6 +33,10 @@ zsh:
 - oh my zsh
 - 
 
+firefox:
+- Firefox users must be configured manually
+
+
 # Change CapsLock to Ctrl
 
 # External installations
