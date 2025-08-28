@@ -43,5 +43,8 @@ firefox:
 sddm (Sugar-Candy):
 https://www.youtube.com/watch?v=2p7FINJSlAk&t=941s
 
+sddm (catpuccin):
+https://github.com/catppuccin/sddm
+
 ## To do list:
 - Config the icon of wifi in waybar
