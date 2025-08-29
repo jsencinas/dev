@@ -6,10 +6,12 @@ IMAGE
 - [Quick setup](#Quick-setup)
 - [Network config](#Network-config)
 - [General software](#General-software)
+    - [stow](#stow)
     - [git](#git)
     - [nvim](#nvim)
     - [firefox](#firefox)
     - [brave](#brave)
+
 
 # Overview
 A compilation of all my gigachad config files for the software I use (doesn't work in windows).
@@ -57,8 +59,13 @@ To initially connect to the network, I recomend using the
 
 
 # General software
+## stow
+**Installation**
+```
+sudo pacman -S stow
+```
 
-### git
+## git
 **Manual installation**
 1. Run the following command:
     ```
@@ -95,17 +102,59 @@ instead of "master" with the following command:
     ```
 3. Now on github, go to settings/SSH and GPG keys, click on "New SSH key" and paste your copied key.
 
-### nvim
+## nvim
+**Manual installation**
+1. Run the following command to isntall the software:
+    ```
+    sudo pacman -S nvim
+    ```
+2. Stow the config files with this command:
+    ```
+    stow ~/dev/nvim
+    ```
+**Dependencies**
+1. wl-clipboard: To copy things to the system clipboard
+    ```
+    sudo pacman -S wl-clipboard
+    ```
+2. unzip: To install the clangd lsp
+    ```
+    sudo pacman -S unzip
+    ```
+3. nodejs: To install python the lsp
+    ```
+    sudo pacman -S nodejs
+    ```
+4. npm: To install the python lsp
+    ```
+    sudo pacman -S npm
+    ```
 
-### firefox
+## firefox
+**Installation**
+1. Run the following command to install the software:
+    ```
+    sudo pacman -S firefox
+    ```
+**Create profiles**
+1. Copy the ~/dev/non-stow-files/firefox_users directory to ~/.local/share/applications
+    ```
+    cp -r ~/dev/non-stow-files/firefox ~/.local/share/applications
+    ```
+2. Run the following command:
+    ```
+    firefox --profilemanager
+    ```
+3. *(This is my personal preference)* Make sure the following profiles are created:
+- Personal (Personal must be marked as default)
+- Work
 
-### brave
+## brave
 **Manual installation:**
 Run the following command:
 ```
 curl -fsS https://dl.brave.com/install.sh | sh
 ```
-
 **Troubleshooting**
 By simply installing brave, the application will look pixeled.
 To solve it, follow the next steps:
@@ -132,6 +181,10 @@ Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
     ```
     /usr/share/sddm/themes/sddm-astronaut-theme/Themes
     ```
+    You can do so automatically by runnig the following command:
+    ```
+    sudo cp ~/dev/non-stow-files/sddm_gigachad_theme/Themes/black_hole_gigachad.conf /usr/share/sddm/themes/sddm-astronaut-theme/Themes/
+    ```
 
 3. To apply the config replace the following .desktop file
     ```
@@ -141,3 +194,8 @@ Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
     ```
     /usr/share/sddm/themes/sddm-astronaut-theme
     ```
+    You can do so automatically by running the following command:
+    ```
+    sudo cp ~/dev/non-stow-files/sddm_gigachad_theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
+    ```
+
