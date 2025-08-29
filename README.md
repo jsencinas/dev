@@ -26,12 +26,14 @@ IMAGE
 ### brave
 *Installation:*
 Run the following command:
-    ```
-    curl -fsS https://dl.brave.com/install.sh | sh
-    ```
+```
+curl -fsS https://dl.brave.com/install.sh | sh
+```
 
 *Troubleshooting*
-By simply installing brave, the application will look pixeled. To solve it, follow the next steps:
+By simply installing brave, the application will look pixeled.
+To solve it, follow the next steps:
+
 1. Open the following file with sudo:
     ```
     /usr/share/applications/brave-browser.desktop
