@@ -24,11 +24,19 @@ IMAGE
 ### firefox
 
 ### brave
-Change the following file:
+*Installation:*
+Run the following command:
+    ```
+    curl -fsS https://dl.brave.com/install.sh | sh
+    ```
+
+*Troubleshooting*
+By simply installing brave, the application will look pixeled. To solve it, follow the next steps:
+1. Open the following file with sudo:
     ```
     /usr/share/applications/brave-browser.desktop
     ```
-and replace the current "Exec=brave %U" with the following:
+2. Replace the current "Exec=brave %U" with the following:
     ```
     Exec=brave --enable-features=UseOzonePlatform --ozone-platform=wayland %U
     ```
