@@ -59,13 +59,48 @@ To initially connect to the network, I recomend using the
 # General software
 
 ### git
+*Manual installation*
+1. Run the following command:
+    ```
+    sudo pacman -S git
+    ```
+*Configure*
+Git needs some information like an identifies so that git can register **who**
+made certain change.
+1. Set username
+    ```
+    git config --get user.<name>
+    ```
+2. Set email
+    ```
+    git config --get user.<email>
+    ```
+3. Github determines the principal branch name as "main", you can force git to use that convention 
+instead of "master" with the following command:
+    ```
+    git config --global init.defaultBranch main
+    ```
+4. Make git rebase pulls automatically
+    ```
+    git config --global pull.rebase true
+    ```
+*Set up ssh key*
+1. Generate the key with the following command:
+    ```
+    ssh-keygen -t ed25519 -C "<your_email@example.com>"
+    ```
+2. Run this command and copy the output:
+    ```
+    cat ~/.ssh/id_ed25519.pub
+    ```
+3. Now on github, go to settings/SSH and GPG keys, click on "New SSH key" and paste your copied key.
 
 ### nvim
 
 ### firefox
 
 ### brave
-*Installation:*
+*Manual installation:*
 Run the following command:
 ```
 curl -fsS https://dl.brave.com/install.sh | sh
