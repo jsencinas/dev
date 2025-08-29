@@ -59,12 +59,12 @@ To initially connect to the network, I recomend using the
 # General software
 
 ### git
-*Manual installation*
+**Manual installation**
 1. Run the following command:
     ```
     sudo pacman -S git
     ```
-*Configure*
+**Configure**
 Git needs some information like an identifies so that git can register **who**
 made certain change.
 1. Set username
@@ -84,7 +84,7 @@ instead of "master" with the following command:
     ```
     git config --global pull.rebase true
     ```
-*Set up ssh key*
+**Set up ssh key**
 1. Generate the key with the following command:
     ```
     ssh-keygen -t ed25519 -C "<your_email@example.com>"
@@ -100,13 +100,13 @@ instead of "master" with the following command:
 ### firefox
 
 ### brave
-*Manual installation:*
+**Manual installation:**
 Run the following command:
 ```
 curl -fsS https://dl.brave.com/install.sh | sh
 ```
 
-*Troubleshooting*
+**Troubleshooting**
 By simply installing brave, the application will look pixeled.
 To solve it, follow the next steps:
 1. Open the following file with sudo:
