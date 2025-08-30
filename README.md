@@ -9,15 +9,25 @@ IMAGE
     - [stow](#stow)
     - [git](#git)
     - [nvim](#nvim)
-    - [firefox](#firefox)
-    - [brave](#brave)
-
+    - [Firefox](#firefox)
+    - [Brave](#brave)
+- [Desktop utilities](#Desktop-utilities)
+    - [Hypr](#Hypr)
+    - [Waybar](#Waybar)
+    - [Sddm](#Sddm)
+    - [Wofi](#Wofi)
+    - [Theming](#Theming)
+    - [Network applet](#Network-applet)
+    - [Bluetooth applet](#Bluetooth-applet)
+    - 
 
 # Overview
-A compilation of all my gigachad config files for the software I use (doesn't work in windows).
+A compilation of all my gigachad config files for the software I use in my linux enviorment.
 In addition, a series of .sh files are located in the repo. When runned, this .sh files install
 all the dependencies necessary to work perfectly. For more info, take a look at the 
 [quick setup](#Quick-setup) section.
+Either way, clone this repository to your home directory. This repo will be needed to get the
+configuration files, so if you don't want the dot files, theres no need to clone it.
 
 # Quick setup
 There are multiple sh files to automate some installation processes.\n
@@ -166,8 +176,22 @@ To solve it, follow the next steps:
     ```
     Exec=brave --enable-features=UseOzonePlatform --ozone-platform=wayland %U
     ```
+# Desktop utilities
+## hypr
+### Hyprland
+**Installation**
+```
+sudo pacman -S hyprland
+```
+**Dependencies**
+(Temporal) Kitty needs to be installed as its the default terminal in Hyprland.
+    ```
+    sudo pacman -S kitty
+    ```
 
-# SDDM Theme
+## waybar
+
+## Sddm
 Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
 1. Run the following command:
     ```
@@ -198,4 +222,10 @@ Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
     ```
     sudo cp ~/dev/non-stow-files/sddm_gigachad_theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
     ```
+## wofi
 
+## Theming
+
+## Network applet
+
+## Bluetooth applet
