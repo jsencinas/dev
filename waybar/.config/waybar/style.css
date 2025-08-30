@@ -1,6 +1,8 @@
 /* --- Global Styles --- */
 * {
-  font-family: 'SF Pro Text', 'Inter', 'Segoe UI, NotoSans Nerd Font', sans-serif;
+  /*font-family: 'SF Pro Text', 'Inter', 'Segoe UI, NotoSans Nerd Font', sans-serif;*/
+
+  font-family: "Inter Nerd Font", "JetBrainsMono Nerd Font", monospace;
   /*font-family: 'Hack Nerd Font', 'Inter', 'Roboto', 'Noto Sans', sans-serif;*/
   /*font-family: 'Hack Nerd Font', 'IBM Plex Sans', 'Source Sans Pro', 'Noto Sans', sans-serif;*/
   font-size: 13px;
