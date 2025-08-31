@@ -222,6 +222,12 @@ Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
     ```
     sudo cp ~/dev/non-stow-files/sddm_gigachad_theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
     ```
+4. Finally, to add the balck hole theme, run the following command:
+    ```
+    sudo cp ~/dev/backgrounds/black_hole_gigachad.png /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds
+    ```
+This will actually copy the black hole image to the /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds folder
+
 ## wofi
 
 ## Theming
