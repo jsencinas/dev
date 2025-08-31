@@ -24,37 +24,37 @@
 
 * {
   font-family: 'CaskaydiaCove Nerd Font', monospace;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Window */
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid @warm-silver;
-  border-radius: 8px;
+  border: 2px solid #444444;
+  border-radius: 3px;
   background-color: @charcoal;
 }
 
 /* Inner Box */
 #inner-box {
-  margin: 5px;
-  padding: 10px;
-  background-color: @charcoal;
+  margin: 0px;
+  padding: 5px;
+  /*background-color: @charcoal;*/
 }
 
 /* Outer Box */
 #outer-box {
-  margin: 5px;
+  margin: 0px;
   padding: 10px;
-  background-color: @charcoal;
+  /*background-color: @charcoal;*/
 }
 
 /* Scroll */
 #scroll {
   margin: 0px;
   padding: 10px;
-  background-color: @charcoal;
+  /*background-color: @charcoal;*/
 }
 
 /* Input */
@@ -63,7 +63,7 @@ window {
   padding: 10px;
   border-radius: 0.1em;
   color: @text;
-  background-color: @graphite;
+  /*background-color: @graphite;*/
 }
 
 #input image {
@@ -81,7 +81,7 @@ window {
 }
 
 #entry {
-  background-color: @charcoal;
+  /*background-color: @charcoal;*/
 }
 
 #entry arrow {
@@ -91,6 +91,7 @@ window {
 /* Selected Entry */
 #entry:selected {
   border: 0.11em solid @warm-silver;
+  background-color: #1e3a5f; /* dark blue */
 }
 
 #entry:selected #text {
@@ -98,5 +99,5 @@ window {
 }
 
 #entry:drop(active) {
-  background-color: @warm-silver!important;
+  /*background-color: @warm-silver!important;*/
 }
