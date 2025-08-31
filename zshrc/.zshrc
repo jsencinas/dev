@@ -59,6 +59,3 @@ bindkey '^ ' autosuggest-accept
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
-
-# Specify nvim path
-export PATH=$HOME/.local/opt/nvim/bin:$PATH
