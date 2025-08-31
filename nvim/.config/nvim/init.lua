@@ -12,6 +12,8 @@ vim.opt.shiftwidth = 2
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.cmd([[
     highlight DiagnosticUnderlineError gui=undercurl guisp=Red
