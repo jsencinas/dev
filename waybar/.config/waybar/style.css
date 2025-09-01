@@ -191,13 +191,19 @@
 }
 
 #battery {
-  color: #99d1db;;
+  color: #99d1db; /* default (normal) */
 }
+
 #battery.charging {
-  color: #a6d189;
+  color: #a6d189; /* green while charging */
 }
+
 #battery.warning:not(.charging) {
-  color: #e78284;
+  color: orange; /* warning state if NOT charging */
+}
+
+#battery.critical:not(.charging) {
+  color: red; /* critical state if NOT charging */
 }
 
 /* --- Tooltip Styles --- */
