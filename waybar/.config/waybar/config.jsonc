@@ -65,7 +65,7 @@
       "format-ethernet": "󰈀 ",
       "format-disconnected": "󰤠 ",
       "interval": 5,
-      "tooltip-format": "{essid}  ({ipaddr})",
+      "tooltip-format": "{ipaddr}",
     
       "on-click": "networkmanager_dmenu"
       // "on-click": "networkmanager_dmenu --dmenu='wofi --show dmenu --prompt \"Select Wi-Fi\"'"
