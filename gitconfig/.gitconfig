@@ -1,0 +1,8 @@
+[user]
+    name = jsencinas
+    email = jesanchezencinas@gmail.com
+[pull]
+    rebase = true
+
+[init]
+    defaultbranch = main
