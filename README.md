@@ -104,6 +104,24 @@ You can test your connection with the following command:
 - Personal (Personal must be marked as default)
 - Work
 
+## brave
+**Manual installation:**
+Run the following command:
+```
+curl -fsS https://dl.brave.com/install.sh | sh
+```
+**Troubleshooting**
+By simply installing brave, the application will look pixeled.
+To solve it, follow the next steps:
+1. Open the following file with sudo:
+    ```
+    /usr/share/applications/brave-browser.desktop
+    ```
+2. Replace the current "Exec=brave %U" with the following:
+    ```
+    Exec=brave --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+    ```
+
 ## stow
 **Installation**
 ```
@@ -175,37 +193,46 @@ instead of "master" with the following command:
     sudo pacman -S npm
     ```
 
-## brave
-**Manual installation:**
-Run the following command:
-```
-curl -fsS https://dl.brave.com/install.sh | sh
-```
-**Troubleshooting**
-By simply installing brave, the application will look pixeled.
-To solve it, follow the next steps:
-1. Open the following file with sudo:
-    ```
-    /usr/share/applications/brave-browser.desktop
-    ```
-2. Replace the current "Exec=brave %U" with the following:
-    ```
-    Exec=brave --enable-features=UseOzonePlatform --ozone-platform=wayland %U
-    ```
 # Desktop utilities
-## hypr
-### Hyprland
-**Installation**
+## hypr -> hyprland
+Hyprland is a dynamic tiling Wayland compositor for Linux.
+**installation**
 ```
 sudo pacman -S hyprland
 ```
-**Dependencies**
-(Temporal) Kitty needs to be installed as its the default terminal in Hyprland.
+**dependencies**
+(temporal) kitty needs to be installed as its the default terminal in hyprland.
     ```
     sudo pacman -S kitty
     ```
 
+## hypr -> hyprlock
+Hyprlock, from the hypr ecosystem, is a lockscreen utility for hyprland.
+**installation**
+```
+sudo pacman -S hyprlock
+```
+
+## hypr -> hypridle
+Hypridle, from the hypr ecosystem, is Hyprland’s idle management daemon.
+**installation**
+```
+sudo pacman -S hyprpaper
+```
+
+## hypr -> hyprpaper
+Hyprpaper, from the hypr ecosystem, is a wallpaper utility for Hyprland.
+**installation**
+```
+sudo pacman -S hyprpaper
+```
+
 ## waybar
+Waybar is a highly customizable Wayland bar for Sway and Wlroots based compositors.
+**installation**
+```
+sudo pacman -S waybar
+```
 
 ## Sddm
 Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
@@ -244,9 +271,11 @@ Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
     ```
 This will actually copy the black hole image to the /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds folder
 
-## wofi
-
 ## Theming
+nwg-look
+    ```
+    sudo pacman -S nwg-look
+    ```
 
 ## Network applet
 
