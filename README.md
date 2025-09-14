@@ -35,7 +35,7 @@ There are multiple sh files to automate some installation processes.\n
 - Modular sh files are located in the sh_files directory
 
 # Network config
-To initially connect to the network, I recomend using the 
+To initially connect to the wireless network, I recomend using the 
 [iwctl](https://wiki.archlinux.org/title/Iwd) command.
 1. Run the following command to start the interactive prompt
     ```
@@ -67,6 +67,21 @@ To initially connect to the network, I recomend using the
     ```
 7. You will be asked to input your the network password
 
+Another good option is using the 
+[network manager](https://wiki.archlinux.org/title/NetworkManager) utility.
+1. Run the following command to display the available networks
+    ```
+    nmcli device wifi list
+    ```
+2. Connect to the target network
+    ```
+    nmcli device wifi connect <SSID_or_BSSID> password <password>
+    ```
+
+You can test your connection with the following command:
+    ```
+    ping google.com
+    ```
 
 # General software
 ## stow
