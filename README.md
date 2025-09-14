@@ -67,6 +67,7 @@ To initially connect to the wireless network, I recomend using the
     ```
 7. You will be asked to input your the network password
 
+
 Another good option is using the 
 [network manager](https://wiki.archlinux.org/title/NetworkManager) utility.
 1. Run the following command to display the available networks
@@ -84,6 +85,25 @@ You can test your connection with the following command:
     ```
 
 # General software
+## firefox
+**Installation**
+1. Run the following command to install the software:
+    ```
+    sudo pacman -S firefox
+    ```
+**Create profiles**
+1. Copy the ~/dev/non-stow-files/firefox_users directory to ~/.local/share/applications
+    ```
+    cp -r ~/dev/non-stow-files/firefox ~/.local/share/applications
+    ```
+2. Run the following command:
+    ```
+    firefox --profilemanager
+    ```
+3. *(This is my personal preference)* Make sure the following profiles are created:
+- Personal (Personal must be marked as default)
+- Work
+
 ## stow
 **Installation**
 ```
@@ -125,7 +145,7 @@ instead of "master" with the following command:
     ```
     cat ~/.ssh/id_ed25519.pub
     ```
-3. Now on github, go to settings/SSH and GPG keys, click on "New SSH key" and paste your copied key.
+3. Now on github, go to "settings/SSH and GPG keys", click on "New SSH key" and paste your copied key.
 
 ## nvim
 **Manual installation**
@@ -154,25 +174,6 @@ instead of "master" with the following command:
     ```
     sudo pacman -S npm
     ```
-
-## firefox
-**Installation**
-1. Run the following command to install the software:
-    ```
-    sudo pacman -S firefox
-    ```
-**Create profiles**
-1. Copy the ~/dev/non-stow-files/firefox_users directory to ~/.local/share/applications
-    ```
-    cp -r ~/dev/non-stow-files/firefox ~/.local/share/applications
-    ```
-2. Run the following command:
-    ```
-    firefox --profilemanager
-    ```
-3. *(This is my personal preference)* Make sure the following profiles are created:
-- Personal (Personal must be marked as default)
-- Work
 
 ## brave
 **Manual installation:**
