@@ -19,7 +19,9 @@ IMAGE
     - [Theming](#Theming)
     - [Network applet](#Network-applet)
     - [Bluetooth applet](#Bluetooth-applet)
-    - 
+- [zsh](#zsh)
+- [Yay](#Yay)
+- [Fonts](#Fonts)
 
 # Overview
 A compilation of all my gigachad config files for the software I use in my linux enviorment.
@@ -88,9 +90,9 @@ You can test your connection with the following command:
 ## firefox
 **Installation**
 1. Run the following command to install the software:
-    ```
-    sudo pacman -S firefox
-    ```
+```
+sudo pacman -S firefox
+```
 **Create profiles**
 1. Copy the ~/dev/non-stow-files/firefox_users directory to ~/.local/share/applications
     ```
@@ -105,7 +107,7 @@ You can test your connection with the following command:
 - Work
 
 ## brave
-**Manual installation:**
+**Installation:**
 Run the following command:
 ```
 curl -fsS https://dl.brave.com/install.sh | sh
@@ -129,11 +131,11 @@ sudo pacman -S stow
 ```
 
 ## git
-**Manual installation**
+**Installation**
 1. Run the following command:
-    ```
-    sudo pacman -S git
-    ```
+```
+sudo pacman -S git
+```
 **Configure**
 Git needs some information like an identifies so that git can register **who**
 made certain change.
@@ -166,7 +168,7 @@ instead of "master" with the following command:
 3. Now on github, go to "settings/SSH and GPG keys", click on "New SSH key" and paste your copied key.
 
 ## nvim
-**Manual installation**
+**Installation**
 1. Run the following command to isntall the software:
     ```
     sudo pacman -S nvim
@@ -196,40 +198,45 @@ instead of "master" with the following command:
 # Desktop utilities
 ## hypr -> hyprland
 Hyprland is a dynamic tiling Wayland compositor for Linux.
-**installation**
+**Installation**
 ```
 sudo pacman -S hyprland
 ```
 **dependencies**
 (temporal) kitty needs to be installed as its the default terminal in hyprland.
-    ```
-    sudo pacman -S kitty
-    ```
+```
+sudo pacman -S kitty
+```
+
+**Remove built-in wallpapers**
+```
+sudo rm -rf /usr/share/hypr/wall*
+```
 
 ## hypr -> hyprlock
 Hyprlock, from the hypr ecosystem, is a lockscreen utility for hyprland.
-**installation**
+**Installation**
 ```
 sudo pacman -S hyprlock
 ```
 
 ## hypr -> hypridle
 Hypridle, from the hypr ecosystem, is Hyprland’s idle management daemon.
-**installation**
+**Installation**
 ```
 sudo pacman -S hyprpaper
 ```
 
 ## hypr -> hyprpaper
 Hyprpaper, from the hypr ecosystem, is a wallpaper utility for Hyprland.
-**installation**
+**Installation**
 ```
 sudo pacman -S hyprpaper
 ```
 
 ## waybar
 Waybar is a highly customizable Wayland bar for Sway and Wlroots based compositors.
-**installation**
+**Installation**
 ```
 sudo pacman -S waybar
 ```
@@ -272,11 +279,46 @@ Github lik: https://github.com/Keyitdev/sddm-astronaut-theme
 This will actually copy the black hole image to the /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds folder
 
 ## Theming
-nwg-look
+*nwg-look
     ```
     sudo pacman -S nwg-look
     ```
 
 ## Network applet
+*nm-applet
+*network-manager-demu
+    ```
+    sudo pacman -S nm-applet
+    ```
 
 ## Bluetooth applet
+*bluez bluez-utils blue-man
+
+# zsh
+Zsh is an advanced Unix command interpreter (shell)
+**Installation**
+```
+sudo pacman -S zsh
+```
+**Set up as default shell**
+Run the following command:
+```
+chsh -s $(which zsh)
+```
+
+# Yay
+Yay is an AUR helper and Pacman wrapper for Arch Linux
+**Installation**
+```
+cd
+git clone <yay_repo>
+cd yay
+makepkg -si
+```
+
+# Fonts
+**Installation**
+(This enables the Times New Roman option in google docs)
+```
+sudo pacman -S ttf-liberation ttf-dejavu
+```
