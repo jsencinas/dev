@@ -11,20 +11,20 @@ IMAGE
     - [stow](#stow)
     - [git](#git)
     - [nvim](#nvim)
+    - [ghostty](#ghostty)
 - [Shell](#Shell)
     - [zsh](#zsh)
     - [Oh My Zsh](#Oh-My-Zsh)
-    - [Tmux](#Tmux)
+    - [Tmux](#Tmux)PENDING
 - [Desktop utilities](#Desktop-utilities)
     - [Hypr](#Hypr)
-    - [Waybar](#Waybar)
+    - [Waybar](#Waybar)*
     - [Sddm](#Sddm)
-    - [Wofi](#Wofi)
-    - [Theming](#Theming)
-    - [Network applet](#Network-applet)
-    - [Bluetooth applet](#Bluetooth-applet)
+    - [Theming](#Theming)PENDING
+    - [Network applet](#Network-applet)PENDING
+    - [Bluetooth applet](#Bluetooth-applet)PENDING
 - [Yay](#Yay)
-- [Fonts](#Fonts)
+- [Fonts](#Fonts)PENDING
 
 # Overview
 A compilation of all my gigachad config files for the software I use in my linux enviorment.
@@ -197,6 +197,14 @@ instead of "master" with the following command:
     ```
     sudo pacman -S npm
     ```
+
+## ghostty
+**Installation**
+```
+sudo pacman -S ghostty
+```
+The config of hyprland located on this repository sets ghostty as
+the default terminal over kitty.
 
 # Shell
 ## zsh
