@@ -35,7 +35,7 @@ Either way, clone this repository to your home directory. This repo will be need
 configuration files, so if you don't want the dot files, theres no need to clone it.
 
 # Quick setup
-There are multiple sh files to automate some installation processes.\n
+There are multiple sh files to automate some installation processes.
 - To get a full desktop installation run the following file: 
 - Modular sh files are located in the sh_files directory
 
@@ -212,7 +212,7 @@ chsh -s $(which zsh)
 ```
 
 ## Oh My Zsh
-Plugin manager for zsh
+Plugin manager for zsh<br>
 **Installation**
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -223,7 +223,7 @@ PENDING
 
 # Desktop utilities
 ## hypr -> hyprland
-Hyprland is a dynamic tiling Wayland compositor for Linux.
+Hyprland is a dynamic tiling Wayland compositor for Linux.<br>
 **Installation**
 ```
 sudo pacman -S hyprland
@@ -240,28 +240,28 @@ sudo rm -rf /usr/share/hypr/wall*
 ```
 
 ## hypr -> hyprlock
-Hyprlock, from the hypr ecosystem, is a lockscreen utility for hyprland.
+Hyprlock, from the hypr ecosystem, is a lockscreen utility for hyprland.<br>
 **Installation**
 ```
 sudo pacman -S hyprlock
 ```
 
 ## hypr -> hypridle
-Hypridle, from the hypr ecosystem, is Hyprland’s idle management daemon.
+Hypridle, from the hypr ecosystem, is Hyprland’s idle management daemon.<br>
 **Installation**
 ```
 sudo pacman -S hyprpaper
 ```
 
 ## hypr -> hyprpaper
-Hyprpaper, from the hypr ecosystem, is a wallpaper utility for Hyprland.
+Hyprpaper, from the hypr ecosystem, is a wallpaper utility for Hyprland.<br>
 **Installation**
 ```
 sudo pacman -S hyprpaper
 ```
 
 ## waybar
-Waybar is a highly customizable Wayland bar for Sway and Wlroots based compositors.
+Waybar is a highly customizable Wayland bar for Sway and Wlroots based compositors.<br>
 **Installation**
 ```
 sudo pacman -S waybar
@@ -321,7 +321,7 @@ This will actually copy the black hole image to the /usr/share/sddm/themes/sddm-
 *bluez bluez-utils blue-man
 
 # Yay
-Yay is an AUR helper and Pacman wrapper for Arch Linux
+Yay is an AUR helper and Pacman wrapper for Arch Linux.<br>
 **Installation**
 ```
 cd
@@ -331,7 +331,7 @@ makepkg -si
 ```
 
 # Fonts
-**Installation**
+**Installation**<br>
 (This enables the Times New Roman option in google docs)
 ```
 sudo pacman -S ttf-liberation ttf-dejavu
