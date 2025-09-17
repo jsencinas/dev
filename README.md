@@ -5,12 +5,16 @@ IMAGE
 - [Overview](#Overview)
 - [Quick setup](#Quick-setup)
 - [Network config](#Network-config)
-- [General software](#General-software)
+- [General software](#General-software) 
+    - [Firefox](#firefox)
+    - [Brave](#brave)
     - [stow](#stow)
     - [git](#git)
     - [nvim](#nvim)
-    - [Firefox](#firefox)
-    - [Brave](#brave)
+- [Shell](#Shell)
+    - [zsh](#zsh)
+    - [Oh My Zsh](#Oh-My-Zsh)
+    - [Tmux](#Tmux)
 - [Desktop utilities](#Desktop-utilities)
     - [Hypr](#Hypr)
     - [Waybar](#Waybar)
@@ -19,7 +23,6 @@ IMAGE
     - [Theming](#Theming)
     - [Network applet](#Network-applet)
     - [Bluetooth applet](#Bluetooth-applet)
-- [zsh](#zsh)
 - [Yay](#Yay)
 - [Fonts](#Fonts)
 
@@ -195,6 +198,29 @@ instead of "master" with the following command:
     sudo pacman -S npm
     ```
 
+# Shell
+## zsh
+Zsh is an advanced Unix command interpreter (shell)
+**Installation**
+```
+sudo pacman -S zsh
+```
+**Set up as default shell**
+Run the following command:
+```
+chsh -s $(which zsh)
+```
+
+## Oh My Zsh
+Plugin manager for zsh
+**Installation**
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## Tmux
+PENDING
+
 # Desktop utilities
 ## hypr -> hyprland
 Hyprland is a dynamic tiling Wayland compositor for Linux.
@@ -293,18 +319,6 @@ This will actually copy the black hole image to the /usr/share/sddm/themes/sddm-
 
 ## Bluetooth applet
 *bluez bluez-utils blue-man
-
-# zsh
-Zsh is an advanced Unix command interpreter (shell)
-**Installation**
-```
-sudo pacman -S zsh
-```
-**Set up as default shell**
-Run the following command:
-```
-chsh -s $(which zsh)
-```
 
 # Yay
 Yay is an AUR helper and Pacman wrapper for Arch Linux
