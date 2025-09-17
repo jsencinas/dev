@@ -200,7 +200,7 @@ instead of "master" with the following command:
 
 # Shell
 ## zsh
-Zsh is an advanced Unix command interpreter (shell)\n
+Zsh is an advanced Unix command interpreter (shell)<br>
 **Installation**
 ```
 sudo pacman -S zsh
