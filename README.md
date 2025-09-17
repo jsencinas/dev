@@ -11,8 +11,8 @@ IMAGE
     - [stow](#stow)
     - [git](#git)
     - [nvim](#nvim)
+- [Terminal](#Terminal)
     - [ghostty](#ghostty)
-- [Shell](#Shell)
     - [zsh](#zsh)
     - [Oh My Zsh](#Oh-My-Zsh)
     - [Tmux](#Tmux)PENDING
@@ -198,6 +198,7 @@ instead of "master" with the following command:
     sudo pacman -S npm
     ```
 
+# Terminal
 ## ghostty
 **Installation**
 ```
@@ -206,7 +207,6 @@ sudo pacman -S ghostty
 The config of hyprland located on this repository sets ghostty as
 the default terminal over kitty.
 
-# Shell
 ## zsh
 Zsh is an advanced Unix command interpreter (shell)<br>
 **Installation**
