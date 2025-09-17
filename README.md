@@ -139,7 +139,7 @@ sudo pacman -S stow
 ```
 sudo pacman -S git
 ```
-**Configure**
+**Configure**<br>
 Git needs some information like an identifies so that git can register **who**
 made certain change.
 1. Set username
@@ -213,7 +213,7 @@ Zsh is an advanced Unix command interpreter (shell)<br>
 ```
 sudo pacman -S zsh
 ```
-**Set up as default shell**
+**Set up as default shell**<br>
 Run the following command:
 ```
 chsh -s $(which zsh)
@@ -236,7 +236,7 @@ Hyprland is a dynamic tiling Wayland compositor for Linux.<br>
 ```
 sudo pacman -S hyprland
 ```
-**dependencies**
+**Dependencies**<br>
 (temporal) kitty needs to be installed as its the default terminal in hyprland.
 ```
 sudo pacman -S kitty
