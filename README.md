@@ -23,6 +23,7 @@ IMAGE
     - [Theming](#Theming)PENDING
     - [Network applet](#Network-applet)PENDING
     - [Bluetooth applet](#Bluetooth-applet)PENDING
+    - [Brightness control](#Brightness-control)PENDING
 - [Yay](#Yay)
 - [Fonts](#Fonts)PENDING
 
